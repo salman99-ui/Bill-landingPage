@@ -1,0 +1,211 @@
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about{
+    font-family : 'Roboto', sans-serif;
+    box-sizing: border-box;
+    padding: 20px 10%;
+    
+    .title-comp{
+        font-family : 'Roboto', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        color: #09A1F6;
+        text-align: center;
+
+    }
+
+    .profile-comp{
+        font-family : 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 32px;
+        color: #424242;
+        text-align: center;
+        margin: 50px 0px;
+
+        @media (max-width : 465px){
+            font-size: 26px;
+        }
+    }
+
+
+    .visi-misi{
+        display: flex;
+        flex-direction: row;
+        margin: 100px 0;     
+
+        .card{
+            box-sizing: border-box;
+            padding: 20px 50px;
+
+                h3{
+                    font-family : 'Roboto', sans-serif;
+                    font-weight: 500;
+                    font-size: 32px;
+                    color: #424242;
+                    text-align: center;
+                    margin-top: 12px;
+
+                }
+
+
+            p{
+                font-family : 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: 21px;
+                color: #424242;
+                text-align: center;
+                margin-top: 12px;
+
+                @media (max-width : 465px){
+                    
+                }
+            }
+        }
+    }
+
+
+
+    .teams{
+        margin: 30px 0;
+        box-sizing: border-box ;
+
+
+        h3{
+            font-family : 'Roboto', sans-serif;
+                font-weight: 300;
+                font-size: 28px;
+                color: #424242;
+                text-align: center;
+                margin-bottom: 80px;
+
+        }
+
+        .teams-row {
+
+            @include row ;
+            padding: 40px 0;
+
+            .team{
+                @include row ;
+
+                .team-img{
+
+                    img{
+                        border-radius: 100%;
+                        width: 150px;
+                        height: 150px;
+
+                    }
+                }
+
+                
+
+                .team-bg{
+                    box-sizing: border-box;
+                    padding: 0 32px;
+                    
+    
+
+                    h4{
+                        font-size: 21px;
+                        font-weight: 500;
+                        font-family : 'Roboto', sans-serif;
+                        margin: 0;
+                        margin-bottom: 8px;
+                        color: black;
+
+                    }
+
+                    h5{
+                        opacity: 0.8;
+                        font-size: 18px;
+                        font-weight: 400;
+                        margin: 0;
+
+                    }
+
+                    p{
+                        font-family: sans-serif;
+                        color: #755d5d;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.4;
+                        margin: 13px 0;
+
+                        @media (max-width : 465px){
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width : 465px){
+    .about{
+        .title-comp , .profile-comp{
+            font-size: 26px;
+        }
+
+        .visi-misi{
+            flex-direction: column;
+
+                .card{
+                    padding: 20px;
+                    margin-bottom: 20px;
+
+                        h3{
+                            font-size: 28px;
+                            font-weight: 500;
+                        }
+
+                        p{
+                            font-size: 21px;
+                        }
+                }
+        }
+
+
+
+        .teams{
+            margin: 0;
+
+            h3{
+                margin-bottom: 70px;
+            }
+
+            .teams-row{
+                @include column ;
+                padding: 0;
+
+                .team{
+                    @include column ;
+                    margin-bottom: 28px;
+
+                    .team-img{
+                        @include row ;
+                        justify-content: center;
+                    }
+
+                    .team-bg{
+                        padding: 20px 0;
+
+                        h4 , h5{
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

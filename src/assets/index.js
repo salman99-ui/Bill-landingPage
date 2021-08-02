@@ -1,12 +1,12 @@
-import LogoImg from './img/bitmap.png'
-import MainBackground from './img/bg-1.png'
-import MainLogo from './img/main.png'
-import ContentImg from './img/contentimg.png'
-import Test from './img/tips1.png'
-import Tips2 from './img/tips2.png'
-import Tips3 from './img/tips3.png'
-import FooterLogo from './img/footerlogo.png'
-import Arrow from './img/arrow.png' 
-import Shape from './img/shape.png'
-export {LogoImg , MainBackground , MainLogo , ContentImg , Test , Tips2 , Tips3 , FooterLogo , Arrow , Shape}
+import Feature1 from './img/feature1.png'
+import Feature2 from './img/feature2.png'
+import Feature3 from './img/feature3.png'
+import Kwk from './img/kwk.jpeg'
+import Majestyk from './img/majestyk.jpeg'
+import Logo from './img/logo_Bill.png'
+import MainLogo from './img/main_bg.png'
+import App from './img/app.png'
+import Play from './img/play.svg'
+import CEO from './img/BILL Eka.jpg'
 
+export {Feature1 , Feature2 , Feature3 , Kwk , Majestyk , Logo , MainLogo , App , Play , CEO}
