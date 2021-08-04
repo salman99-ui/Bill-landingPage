@@ -109,6 +109,7 @@
     justify-content: space-around;
     padding: 10px 10%;
     background-color: #12586D ;
+    font-family : 'Roboto', sans-serif;
 
     .social-media{
         flex: 1;
@@ -148,7 +149,7 @@
                         text-decoration: none;
                         color: white;
                         letter-spacing: 1;
-                        font-size: 14px;
+                        font-size: 13px;
                        
 
                                 .icon{
@@ -273,6 +274,12 @@
 
             .connect{
                 color: white;
+
+                ul{
+                    li{
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }

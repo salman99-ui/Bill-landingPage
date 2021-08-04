@@ -69,10 +69,10 @@ function Index() {
                         <h3>Connect With Us</h3>
 
                         <ul>
-                            <li><FaPhone className="icon" /> +628131991</li>
-                            <li><FaEnvelope className="icon" /> bill_indonesia@gmail.com</li>
-                            <li><FaMapMarkerAlt className="icon" /> PIK 2 , North Jakarta</li>
-                            <li><FaCalendarDay className="icon" /> Monday - Friday </li>
+                            <li><FaPhone className="icon" />  +628131991</li>
+                            <li><FaEnvelope className="icon" />  bill_indonesia@gmail.com</li>
+                            <li><FaMapMarkerAlt className="icon" />  PIK 2 , North Jakarta</li>
+                            <li><FaCalendarDay className="icon" />  Monday - Friday </li>
                         </ul>
                     </div>
                     
