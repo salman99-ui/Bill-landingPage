@@ -20,16 +20,23 @@ function Index() {
         <div className="main-page">
             <Router>
                 <div className="navigation">
-                        <img src={Logo} className="header-logo" />
+                        <Link to="/"><img src={Logo} className="header-logo" /></Link>
+                        
+                             
 
                         <button className="btn-menu"><FaBars size="20" onClick={() => setShow(!show)} /></button>
-                        
+
+                        <Link to="/login" className="btn-login">Login</Link>
+
                         <ul className={"list " + (show ? 'showTab' : '') }>
-                            <li className="list-item"><Link className="list-link" to="/">Home</Link></li>
-                            <li className="list-item"><Link className="list-link" to="aboutus">About Us</Link></li>
-                            <li className="list-item"><Link className="list-link" to="roadmap">Milistone & Roadmap</Link></li>
-                            <li className="list-item"><Link className="list-link" to="investor">Investor Relation</Link></li>
-                        </ul>      
+                            <li className="list-item close" onClick={() => setShow(!show)}><span>X</span></li>
+                            <li className="list-item" ><Link className="list-link" to="/">Home</Link></li>
+                            <li className="list-item"><Link className="list-link" to="/about">About Us</Link></li>
+                            <li className="list-item"><Link className="list-link" to="/roadmap">Milistone & Roadmap</Link></li>
+                            <li className="list-item"><Link className="list-link" to="/investor">Investor Relation</Link></li>
+                        </ul> 
+
+                        
                 </div>
 
                 <Switch>
@@ -50,10 +57,10 @@ function Index() {
                         <h3>Service</h3>
 
                         <ul>
-                            <li><Link className="list-link">Home</Link></li>
-                            <li><Link className="list-link">About Us</Link></li>
-                            <li><Link className="list-link">Milestone & Roadmap</Link></li>
-                            <li><Link className="list-link">Investor Relation</Link></li>
+                            <li><Link to="/" className="list-link">Home</Link></li>
+                            <li><Link to="/about" className="list-link">About Us</Link></li>
+                            <li><Link to="/roadmap" className="list-link">Milestone & Roadmap</Link></li>
+                            <li><Link to="/investor" className="list-link">Investor Relation</Link></li>
                         </ul>
                         
                     </div>
@@ -62,10 +69,10 @@ function Index() {
                         <h3>Connect With Us</h3>
 
                         <ul>
-                            <li><Link className="list-link"> <FaPhone className="icon" /> +628131991</Link></li>
-                            <li><Link className="list-link"> <FaEnvelope className="icon" /> bill_indonesia@gmail.com</Link></li>
-                            <li><Link className="list-link"> <FaMapMarkerAlt className="icon" /> PIK 2 , North Jakarta</Link></li>
-                            <li><Link className="list-link"> <FaCalendarDay className="icon" />Monday - Friday </Link></li>
+                            <li><FaPhone className="icon" /> +628131991</li>
+                            <li><FaEnvelope className="icon" /> bill_indonesia@gmail.com</li>
+                            <li><FaMapMarkerAlt className="icon" /> PIK 2 , North Jakarta</li>
+                            <li><FaCalendarDay className="icon" /> Monday - Friday </li>
                         </ul>
                     </div>
                     

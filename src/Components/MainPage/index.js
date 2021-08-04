@@ -1,8 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import { MainLogo , Feature1 , Feature2 , Feature3 , App , Play , Kwk , Majestyk} from '../../assets'
-import {IconContext} from 'react-icons'
-import {FaFacebook , FaTwitter} from 'react-icons/fa'
+
 import './main.scss'
 
 function Index() {
@@ -14,9 +12,7 @@ function Index() {
                         <div className="main-title">
                             <h2>BIll Solusi <span>Pembayaran</span> Harianmu</h2>
                             <p>Cepat , Transparan dan Tanpa Ribet !</p>
-                            <Link className="link-action">
-                                <button className="button-sign">Sign In</button>
-                            </Link>
+                            
                         </div>
 
                         <div className="screen-logo">
@@ -83,9 +79,47 @@ function Index() {
                         </div>
                 </div>
 
+                <div className="feedback">
+                    <h2>Testimonial</h2>
+                    <div className="wrapper">
+                        <div className="slider">
+                            <div className="slider-item">
+                                <h4>William Rhomania</h4>
+                                <p>Aplikasinya berguna sekali di masa pandemi ini dan cukup simple gk ribet penggunaanya. Thx U</p>
+                            </div>
+
+                            <div className="slider-item">
+                            <h4>IMAM SANTOSO</h4>
+                                <p>untuk ke depanya semoga bill indonesia bisa top up di konter HP atau di indomaret dan Alfamart</p>
+                            </div>
+
+                            <div className="slider-item">
+                                <h4>Joean</h4>
+                                <p>Keren sangat membantu</p>
+                            </div>
+
+                            <div className="slider-item">
+                            
+                            <h4>Suhud Uut</h4>
+                                <p>Mantul cara pembayaran digital nya, semoga sukses selalu </p>
+                            </div>
+
+                            <div className="slider-item">
+                                <h4>Yolanda Oktora</h4>
+                                <p>Bagus dan Sangat Bermanfaat </p>
+                            </div>
+
+                            <div className="slider-item">
+                                <h4>Joean</h4>
+                                <p>Keren sangat membantu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="main-profile">
                     <h2>Dimana & Kapan Saja</h2>
-                    <iframe className="video-frame"  src="https://www.youtube.com/embed/3Bn6hTkjd6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe className="video-frame"  src="https://www.youtube.com/embed/3Bn6hTkjd6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
         </div>
     )

@@ -28,18 +28,39 @@
 .main-page{
 
 .navigation{
-    @include row-spacebetween ;
     padding: 10px 10%;
     box-sizing: border-box;
     box-shadow: 0px 0px 4px 1px rgb(131, 131, 131);
 
-    .header-logo{ height: 50px;}
+    .header-logo{ 
+        height: 50px;
+        display: inline;
+    }
 
     .btn-menu{
         background-color: transparent;
         border: none;
         outline: none;
         display: none;
+        float: right;
+        margin-top: 8px;
+    }
+
+    .btn-login{
+        float: right;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        margin-top: 5px;
+        background-color: #0b24fb;
+        padding: 8px 18px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: white;
+        border-radius: 3px;
+        font-size: 15px;
+        text-decoration: none;
+      
     }
 
     .list.showTab{
@@ -51,16 +72,25 @@
 
     .list{
         display: flex;
+        float: right;
         list-style: none;
+       
+        margin-right: 24px;
 
-        
+        .list-item:nth-child(1){
+            display: none;
+            
+        }
+
         .list-item{
 
-            margin-left: 24px;
-            font-size: 14px;
+            margin-left: 26px;
+            font-size: 16px;
             font-weight: 400;
             font-family: sans-serif;
             letter-spacing: 1;
+
+            
 
                 .list-link{
                     text-decoration: none;
@@ -119,6 +149,7 @@
                         color: white;
                         letter-spacing: 1;
                         font-size: 14px;
+                       
 
                                 .icon{
                                     color: white;
@@ -144,6 +175,14 @@
             font-weight: 500;
             font-size: 18px;
         }
+
+        p{
+            font-size: 400;
+            font-size: 14px;
+            opacity: .9;
+            line-height: 1.5;
+            letter-spacing: 1px;
+        }
       }
     }
 }
@@ -161,9 +200,16 @@
                 margin-left: 35px;
             }
 
+            .btn-login{
+                margin-right: 24px;
+                display: inline;
+            }
+
             .btn-menu{
                 margin-right: 35px;
                 display: block;
+                float: right;
+                
             }
 
             .list{
@@ -180,11 +226,25 @@
                 margin: 0;
                 transition: left 2s;
                 
+                .list-item:nth-child(1){
+                    position: relative;
+                    right: 0;
+                    margin-right: 10px;
+                    font-size: 21px;
+                    margin-bottom: 16px;
+                    font-weight: bold;
+                    color: white;
+                    display: block;
+
+                    span{
+                        float: right;
+                    }
+                }
 
                 .list-item{
 
                     margin: 0;
-                    margin-bottom: 20px;
+                    margin-bottom: 23px;
                     font-size: 13px;
                     display: block;
 
@@ -209,6 +269,10 @@
 
             .product , .connect{
                 margin-bottom: 20px;
+            }
+
+            .connect{
+                color: white;
             }
         }
     }

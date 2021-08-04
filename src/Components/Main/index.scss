@@ -276,7 +276,6 @@ body::-webkit-scrollbar{
 
                 .wrapper-feedback{
                     width: 100%;
-                    
                     overflow-x: hidden;
                     
 
@@ -287,7 +286,7 @@ body::-webkit-scrollbar{
                         display: flex ;
                         flex-direction: row;
                         flex-wrap: nowrap ;
-                        animation: slider 8s infinite;
+                        animation: slider 15s infinite;
                         
                         
 
