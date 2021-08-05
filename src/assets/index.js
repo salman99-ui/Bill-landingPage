@@ -8,5 +8,6 @@ import MainLogo from './img/main_bg.png'
 import App from './img/app.png'
 import Play from './img/play.svg'
 import CEO from './img/BILL Eka.jpg'
+import CTO from './img/Ricky Bill.jpg'
 
-export {Feature1 , Feature2 , Feature3 , Kwk , Majestyk , Logo , MainLogo , App , Play , CEO}
+export {Feature1 , Feature2 , Feature3 , Kwk , Majestyk , Logo , MainLogo , App , Play , CEO , CTO}

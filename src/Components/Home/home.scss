@@ -52,7 +52,7 @@
         border: none;
         outline: none;
         margin-top: 5px;
-        background-color: #0b24fb;
+        background-color: #09A1F6;
         padding: 8px 18px;
         letter-spacing: 1px;
         font-weight: 400;
@@ -129,6 +129,7 @@
 
     .product , .connect{
         flex: 1;
+        color: white;
 
         h3{
             margin: 0;
@@ -179,12 +180,20 @@
 
         p{
             font-size: 400;
-            font-size: 14px;
+            font-size: 13px;
             opacity: .9;
             line-height: 1.5;
             letter-spacing: 1px;
         }
       }
+    }
+
+    .copyright{
+        p{
+            margin: 0;
+            font-weight: 400;
+            text-align: center;
+        }
     }
 }
 

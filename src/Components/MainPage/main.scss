@@ -232,14 +232,14 @@
 
             .slider{
                 position: relative;
-                width: 150%;
+                width: 200%;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 animation: deks-slider 12s infinite;
 
                 .slider-item{
-                    width: 300px;
+                    width: 32%;
                     
                     margin-right: 20px;
                     box-sizing: border-box;
@@ -402,23 +402,23 @@
     }
 
     26%{
-        left: -220px;
+        left: -33%;
     }
 
     45%{
-        left: -440px;
+        left: -67%;
     }
 
     68%{
-        left: -660px;
+        left: -100%;
     }
 
     87%{
-        left: -890px;
+        left: -133%;
     }
 
     100%{
-        left: -1120px;
+        left: -167%;
     }
 }
 
@@ -430,23 +430,23 @@
     }
 
     26%{
-        left: -240px;
+        left: -210px;
     }
 
     45%{
-        left: -485px;
+        left: -425px;
     }
 
     68%{
-        left: -740px;
+        left: -630px;
     }
 
     87%{
-        left: -980px;
+        left: -840px;
     }
 
     100%{
-        left: -1235px;
+        left: -1050px;
     }
 }
 

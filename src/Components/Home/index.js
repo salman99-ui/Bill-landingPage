@@ -16,14 +16,14 @@ import './home.scss'
 
 function Index() {
     const [ show , setShow] = useState(false)
+    const date = new Date()
+
     return (
         <div className="main-page">
             <Router>
                 <div className="navigation">
                         <Link to="/"><img src={Logo} className="header-logo" /></Link>
                         
-                             
-
                         <button className="btn-menu"><FaBars size="20" onClick={() => setShow(!show)} /></button>
 
                         <Link to="/login" className="btn-login">Login</Link>
@@ -85,6 +85,9 @@ function Index() {
 
                 </div>
 
+                <div className="copyright">
+                    <p>Bill &copy;Copyright { date.getFullYear() }</p>
+                </div>
 
             </Router> 
         </div>
