@@ -371,7 +371,7 @@
             padding: 0 10%;
             .wrapper{
                 .slider{
-                    width: 420%;
+                    width: 520%;
                     animation: mobs-slider 15s infinite;
 
                     .slider-item{
@@ -384,7 +384,9 @@
 
 
         .main-profile{
-
+            h2{
+                font-size: 28px;;
+            }
             .video-frame{
                 height: 250px;
                 width: 90%;
@@ -430,23 +432,23 @@
     }
 
     26%{
-        left: -210px;
+        left: -225px;
     }
 
     45%{
-        left: -425px;
+        left: -460px;
     }
 
     68%{
-        left: -630px;
+        left: -700px;
     }
 
     87%{
-        left: -840px;
+        left: -930px;
     }
 
     100%{
-        left: -1050px;
+        left: -1150px;
     }
 }
 
